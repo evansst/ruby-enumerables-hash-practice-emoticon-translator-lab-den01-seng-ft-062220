@@ -8,7 +8,7 @@ def load_library(path)
   new_data = {}
   data.each do |name,element|
     binding.pry
-    final_array[name][element] = {}
+    new_data[name] =
     end
   final_array
 end
