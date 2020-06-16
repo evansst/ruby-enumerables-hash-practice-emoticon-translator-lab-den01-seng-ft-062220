@@ -24,7 +24,7 @@ def get_japanese_emoticon(path,emoticon)
   
 end
 
-def get_english_meaning
+def get_english_meaning(path,emoticon)
   data = load_library(path)
   data.each do |name, element|
     # binding.pry
