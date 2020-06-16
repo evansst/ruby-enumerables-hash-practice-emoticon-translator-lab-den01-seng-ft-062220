@@ -7,7 +7,7 @@ def load_library(path)
   data = YAML.load_file(path)
   new_data = {}
   data.each do |name,element|
-    binding.pry
+    #binding.pry
     new_data[name] = {:english => element[0], :japanese => element[1]}
     end
     new_data
