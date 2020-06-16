@@ -8,7 +8,8 @@ def load_library(path)
   new_data = {}
   data.each do |name,element|
     binding.pry
-    new_data[name] =
+    new_data[name] = {:english => element[0], :japanese => element[1]}
+    new_data[name]
     end
   final_array
 end
