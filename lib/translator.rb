@@ -5,8 +5,8 @@ require 'yaml'
 
 def load_library(path)
   data = YAML.load_file(path)
-  
-  data.each_with_object do |(name,element), final_array|
+  new_data = {}
+  data.each do |name,element|
     binding.pry
     final_array[name][element] = {}
     end
