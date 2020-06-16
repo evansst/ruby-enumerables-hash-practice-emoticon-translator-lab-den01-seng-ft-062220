@@ -8,7 +8,7 @@ def load_library(path)
   data.each_with_object do |(name,element), final_array|
     binding.pry
     end
-  new_data    
+  final_array
 end
 
 def get_japanese_emoticon
