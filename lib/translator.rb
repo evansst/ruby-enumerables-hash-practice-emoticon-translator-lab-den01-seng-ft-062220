@@ -13,8 +13,14 @@ def load_library(path)
     new_data
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(path,emoticon)
+  data = load_library(path)
+  data.each do |name, element|
+    if name[:japanese] == emoticon
+      return name[:english]
+    end
+  end
+  
 end
 
 def get_english_meaning
