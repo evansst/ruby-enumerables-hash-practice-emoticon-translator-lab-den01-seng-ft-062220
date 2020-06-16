@@ -18,7 +18,7 @@ def get_japanese_emoticon(path,emoticon)
   data.each do |name, element|
     # binding.pry
     if element[:english] == emoticon
-      return element[:japanese]
+      return name
     end
   end
   
