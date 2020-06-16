@@ -10,7 +10,7 @@ def load_library(path)
     binding.pry
     new_data[name] = {:english => element[0], :japanese => element[1]}
     end
-  final_array
+    new_data
 end
 
 def get_japanese_emoticon
